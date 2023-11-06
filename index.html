@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>{{ display }}</h2>
+        <button v-on:click="display+='1'">1</button>
+        <button v-on:click="display+='2'">2</button>
+        <button v-on:click="display+='3'">3</button>
+        <button v-on:click="display+='4'">4</button>
+        <button v-on:click="display+='5'">5</button>
+        <button v-on:click="display+='6'">6</button>
+        <button v-on:click="display+='7'">7</button>
+        <button v-on:click="display+='8'">8</button>
+        <button v-on:click="display+='9'">9</button>
+        <button v-on:click="display+='0'">0</button>
+        <button v-on:click="display+='.'">.</button>
+        <button v-on:click="add">+</button>
+        <button v-on:click="subtract">-</button>
+        <button v-on:click="divide">/</button>
+        <button v-on:click="multiply">*</button>
+        <button v-on:click="equals">=</button>
+
+    </div>
+    <script src="jowo.js"></script>
+</body>
+</html>
