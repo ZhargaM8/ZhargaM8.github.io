@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar WebGL</title>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="data.js"></script>
-    <script type="text/javascript" src="gl-matrix-min.js"></script>
-    <script type="text/javascript" src="IOHandler.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampanye Lingkungan Kita</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body onload="main()">
-    <canvas id="myCanvas" style="border: 1px solid black;" width="750px" height="650px">
-
-    </canvas>
-    <br>
-    Zharga Prayata Zainal
-    <br>
-    5025221136
-    <script id="vertexShaderCode" type="notjs">
-        attribute vec3 aPosition;
-        attribute vec3 aColor;
-        uniform mat4 uMatrix;
-        uniform mat4 uProj;
-        uniform mat4 uView;
-        uniform mat4 uModel;
-        varying vec3 vColor;
-        void main(){
-            vColor = aColor;
-            gl_Position = uProj * uView * uModel * vec4(aPosition, 200.0);
-        }
-    </script>
+<body>
+  <header>
+    <h1>Kampanye Tanpa Plastik</h1>
+    <nav>
+      <a href="index.html">Beranda</a> | <a href="laporan.html">Laporkan Sampah</a>
+    </nav>
+  </header>
+  <main class="container">
+    <h2>Edukasi: Kurangi Sampah Plastik!</h2>
+    <p>Plastik membutuhkan ratusan tahun untuk terurai. Berikut 3 cara mudah:</p>
+    <ul>
+      <li>Gunakan botol minum reusable.</li>
+      <li>Bawa tas belanja kain.</li>
+      <li>Hindari sedotan plastik.</li>
+    </ul>
+    <p>Ayo ikut tantangan #TanpaPlastik! <a href="https://x.com">Bagikan di X</a></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Kampanye Lingkungan Kita</p>
+  </footer>
 </body>
 </html>
